@@ -6,7 +6,7 @@ FNF Manager is an all-in-one Friday Night Funkin' Manager to manage things like 
 
 <!-- Never gonna remember, so here's the symboles: :x: :white_check_mark: :grey_question: :pencil2: -->
 ## Planned Features
-| Feature | Done? |
+| Feature | Status |
 |---|---|
 | Base game installation and updates | :x: |
 | Mods from Gamebanana | :x: |
