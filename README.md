@@ -1,4 +1,5 @@
 # FNF Manager
+An all-in-one app for managing Friday Night Funkin.
 
 ## What is FNF Manager?
 FNF Manager is an all-in-one Friday Night Funkin' Manager to manage things like base game, mods, save data, covers, etc.
