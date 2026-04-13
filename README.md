@@ -10,7 +10,7 @@ FNF Manager is an all-in-one Friday Night Funkin' Manager to manage things like 
 |---|---|
 | Base game installation and updates | :x: |
 | Mods from Gamebanana | :x: |
-| Mods from a FNF Manager repository | :grey_question: |
+| Mods from an FNF Manager repository | :grey_question: |
 | Mods from a locally downloaded file | :x: |
 | Save data management | :x: |
 | Cover management | :x: |
