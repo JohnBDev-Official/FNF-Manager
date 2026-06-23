@@ -20,7 +20,7 @@
         <Border
           BorderBrush="{DynamicResource SidebarSeparator}"
           BorderThickness="0,0,2,0"
-          Padding="10" Margin="10,0,0,0"
+          Padding="10"
           Width="180"
           HorizontalAlignment="Left">
             <Grid>
@@ -38,14 +38,14 @@
                     HorizontalAlignment="Stretch"
                     Margin="0,0,-10,10"/>
                 <Button
-                    HorizontalAlignment="Stretch"
                     Margin="0,0,0,5"
                     FontSize="20"
+                    Classes="sidebar-button"
                     Content="Base game" />
                 <Button
-                    HorizontalAlignment="Stretch"
                     Margin="0,0,0,5"
                     FontSize="20"
+                    Classes="sidebar-button"
                     Content="Mods" />
             </StackPanel>
             <StackPanel
@@ -59,6 +59,7 @@
                     HorizontalAlignment="Stretch"
                     Margin="0,0,0,5"
                     FontSize="20"
+                    Classes="sidebar-button"
                     Content="Settings" />
             </StackPanel>
             </Grid>
@@ -121,22 +122,25 @@
     <Window.Styles>
         <Style Selector="Button.sidebar-button">
             <Setter Property="Background" Value="{DynamicResource SidebarButtonBG}"/>
-            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextColor}"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="CornerRadius" Value="4"/>
             <Setter Property="Padding" Value="10,6"/>
-            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
         </Style>
 
         <Style Selector="Button.sidebar-button:pointerover">
-            <Setter Property="Background" Value="#3c35ff"/>
+            <Setter Property="Background" Value="{DynamicResource SidebarButtonBGHover}"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextColor}"/>
+            <Setter Property="BorderBrush" Value="Black"/>
         </Style>
 
         <Style Selector="Button.sidebar-button:pressed">
-            <Setter Property="Background" Value="#fdd461"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="{DynamicResource SidebarButtonBGPressed}"/>
+            <Setter Property="Foreground" Value="{DynamicResource TextColor}"/>
+            <Setter Property="BorderBrush" Value="Black"/>
         </Style>
     </Window.Styles>
 </Window>

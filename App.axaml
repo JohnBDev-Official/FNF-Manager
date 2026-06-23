@@ -24,6 +24,29 @@
         <Style Selector="Button">
             <Setter Property="Foreground" Value="White" />
         </Style>
+
+        <Style Selector="Button.sidebar-button">
+        <Style.Resources>
+                <SolidColorBrush x:Key="ButtonBackground" Color="#2823b4"/>
+                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
+                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+    
+                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+
+                <SolidColorBrush x:Key="ButtonBorderBrush" Color="Black"/>
+                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Black"/>
+                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Black"/>
+            </Style.Resources>
+
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="CornerRadius" Value="4"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
     </Application.Styles>
 
     <Application.Resources>
@@ -39,6 +62,8 @@
             <Color x:Key="LeftGraidentInner">#2823b4</Color>
             <Color x:Key="LeftGraidentOuter">#0e0e0e</Color>
             <SolidColorBrush x:Key="SidebarButtonBG" Color="#3f3a48"/>
+            <SolidColorBrush x:Key="SidebarButtonBGHover" Color="Black"/>
+            <SolidColorBrush x:Key="SidebarButtonBGPressed" Color="White"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
