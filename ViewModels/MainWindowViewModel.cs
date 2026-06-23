@@ -9,6 +9,9 @@ namespace FNF_Manager.ViewModels
         [ObservableProperty]
         private bool isDarkMode;
 
+        [ObservableProperty]
+        private ViewModelBase currentPage = new SettingsViewModel();
+
         partial void OnIsDarkModeChanged(bool value)
         {
             if (Application.Current is { } app)

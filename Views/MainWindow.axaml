@@ -73,6 +73,9 @@
             </Border.Background>
         </Border>
 
+        <ContentControl Grid.Column="1"
+                    Content="{Binding CurrentPage}"/>
+
         <Border HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Background="{DynamicResource WelcomeTextBack}"
