@@ -15,9 +15,10 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <Grid>
+    <Grid
+        Background="{DynamicResource BackgroundColor}">
         <Border
-          BorderBrush="Black"
+          BorderBrush="{DynamicResource SidebarSeparator}"
           BorderThickness="0,0,2,0"
           Padding="10" Margin="10"
           Width="150"
@@ -30,14 +31,31 @@
                            Text="{StaticResource AppName}"/>
                 <Border
                     Height="1"
-                    Background="Black"
+                    Background="{DynamicResource SidebarSeparator}"
                     HorizontalAlignment="Stretch"
-                    Margin="0,0,0,10"/>
+                    Margin="0,0,-10,10"/>
                 <Button
                     HorizontalAlignment="Stretch"
+                    Margin="0,0,0,5"
+                    Content="Test" />
+                <Button
+                    HorizontalAlignment="Stretch"
+                    Margin="0,0,0,5"
+                    Content="Test" />
+                <Button
+                    HorizontalAlignment="Stretch"
+                    Margin="0,0,0,5"
                     Content="Test" />
             </StackPanel>
         </Border>
+
+        <ToggleSwitch
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Margin="0,0,10,0"
+            OnContent="Dark"
+            OffContent="Light"
+            IsChecked="{Binding IsDarkMode}"/>
 
         <Border HorizontalAlignment="Center"
             VerticalAlignment="Center"

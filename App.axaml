@@ -21,11 +21,15 @@
                 <ResourceDictionary x:Key="Light">
                     <SolidColorBrush x:Key="WelcomeTextFore" Color="Black"/>
                     <SolidColorBrush x:Key="WelcomeTextBack" Color="#CCFFFFFF"/>
+                    <SolidColorBrush x:Key="SidebarSeparator" Color="Black"/>
+                    <SolidColorBrush x:Key="BackgroundColor" Color="#fde872"/>
                 </ResourceDictionary>
 
                 <ResourceDictionary x:Key="Dark">
                     <SolidColorBrush x:Key="WelcomeTextFore" Color="White"/>
                     <SolidColorBrush x:Key="WelcomeTextBack" Color="#CC000000"/>
+                    <SolidColorBrush x:Key="SidebarSeparator" Color="White"/>
+                    <SolidColorBrush x:Key="BackgroundColor" Color="#9370fe"/>
                 </ResourceDictionary>
 
             </ResourceDictionary.ThemeDictionaries>
