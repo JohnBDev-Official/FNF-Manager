@@ -1,6 +1,7 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="FNF_Manager.App"
+             xmlns:media="using:Avalonia.Media"
              xmlns:local="using:FNF_Manager"
              RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
@@ -11,28 +12,33 @@
   
     <Application.Styles>
         <FluentTheme />
+
+         <Style Selector="Window">
+            <Setter Property="FontFamily"
+                Value="avares://FNF-Manager/Assets/PhantomMuff_Full_Letters_1_1_5.ttf#PhantomMuff 1.5" />
+        </Style>
+
+        <Style Selector="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="Foreground" Value="White" />
+        </Style>
     </Application.Styles>
 
     <Application.Resources>
         <ResourceDictionary>
             <x:String x:Key="AppName">FNF Manager</x:String>
-            <ResourceDictionary.ThemeDictionaries>
 
-                <ResourceDictionary x:Key="Light">
-                    <SolidColorBrush x:Key="WelcomeTextFore" Color="Black"/>
-                    <SolidColorBrush x:Key="WelcomeTextBack" Color="#CCFFFFFF"/>
-                    <SolidColorBrush x:Key="SidebarSeparator" Color="Black"/>
-                    <SolidColorBrush x:Key="BackgroundColor" Color="#fde872"/>
-                </ResourceDictionary>
-
-                <ResourceDictionary x:Key="Dark">
-                    <SolidColorBrush x:Key="WelcomeTextFore" Color="White"/>
-                    <SolidColorBrush x:Key="WelcomeTextBack" Color="#CC000000"/>
-                    <SolidColorBrush x:Key="SidebarSeparator" Color="White"/>
-                    <SolidColorBrush x:Key="BackgroundColor" Color="#9370fe"/>
-                </ResourceDictionary>
-
-            </ResourceDictionary.ThemeDictionaries>
+            <!-- Theme -->
+            <SolidColorBrush x:Key="TextColor" Color="White"/>
+            <SolidColorBrush x:Key="WelcomeTextFore" Color="White"/>
+            <SolidColorBrush x:Key="WelcomeTextBack" Color="#CC000000"/>
+            <SolidColorBrush x:Key="SidebarSeparator" Color="Black"/>
+            <SolidColorBrush x:Key="BackgroundColor" Color="#fdd461"/>
+            <Color x:Key="LeftGraidentInner">#2823b4</Color>
+            <Color x:Key="LeftGraidentOuter">#0e0e0e</Color>
+            <SolidColorBrush x:Key="SidebarButtonBG" Color="#3f3a48"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
