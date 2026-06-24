@@ -2,7 +2,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="620" d:DesignHeight="450"
              x:Class="FNF_Manager.Views.BaseGameView">
-  Welcome to the Base Game page!
+    <Grid
+        Background="{DynamicResource BaseGameBackgroundColor}">
+        <Rectangle
+            VerticalAlignment="Top"
+            HorizontalAlignment="Stretch"
+            Fill="Black"
+            Stretch="Fill"
+            Height="40"/>
+        <TextBlock
+            Foreground="{DynamicResource TextColor}"
+            FontSize="24"
+            Margin="10,6,0,0"
+            FontFamily="avares://FNF-Manager/Assets/VCR_OSD_MONO_1.001.ttf#VCR OSD Mono">
+            Base Game
+        </TextBlock>
+        <TextBlock
+            Foreground="#7F7F7F"
+            FontSize="24"
+            Margin="10,6,10,0"
+            HorizontalAlignment="Right"
+            FontFamily="avares://FNF-Manager/Assets/VCR_OSD_MONO_1.001.ttf#VCR OSD Mono">
+            Version 0.8.4
+        </TextBlock>
+    </Grid>
 </UserControl>

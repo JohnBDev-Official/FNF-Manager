@@ -65,6 +65,8 @@
             <SolidColorBrush x:Key="SidebarButtonBGHover" Color="Black"/>
             <SolidColorBrush x:Key="SidebarButtonBGPressed" Color="White"/>
 
+            <SolidColorBrush x:Key="BaseGameBackgroundColor" Color="#fdd461"/>
+
             <SolidColorBrush x:Key="SettingsBackgroundColor" Color="#ce64df"/>
         </ResourceDictionary>
     </Application.Resources>
