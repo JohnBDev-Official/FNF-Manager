@@ -16,7 +16,6 @@
     </Design.DataContext>
 
     <Grid
-        Background="{DynamicResource BackgroundColor}"
         ColumnDefinitions="180,*">
         <Border
           BorderBrush="{DynamicResource SidebarSeparator}"
@@ -31,6 +30,7 @@
                            FontWeight="Bold"
                            FontSize="20"
                            LetterSpacing="0.25"
+                           Foreground="{DynamicResource TextColor}"
                            Text="{StaticResource AppName}"/>
                 <Border
                     Height="1"

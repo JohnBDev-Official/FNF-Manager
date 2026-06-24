@@ -4,5 +4,101 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="FNF_Manager.Views.SettingsView">
-  Welcome to the settings page!
+    <Grid
+        Background="{DynamicResource SettingsBackgroundColor}">
+        <TextBlock
+            Foreground="{DynamicResource TextColor}"
+            FontSize="28"
+            Margin="10">
+            Settings
+        </TextBlock>
+        <Grid
+            ColumnDefinitions="Auto,Auto,Auto"
+            RowDefinitions="Auto,Auto,Auto"
+            Margin="75,60,75,0"
+            HorizontalAlignment="Stretch">
+
+            <StackPanel
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="0,5,0,0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="20">
+                    Base Game Directory
+               </TextBlock>
+                <TextBlock
+                    FontSize="11">
+                    (The Directory where FNF base game is installed)
+                </TextBlock>
+            </StackPanel>
+            <TextBox
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="15,5,0,0"
+                Width="400"
+                FontFamily="Cascadia Mono"
+                PlaceholderText="Enter base game directory path..."/>
+            <Button
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="15,5,0,0"
+                Content="Save"/>
+
+            <StackPanel
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="0,5,0,0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="20">
+                    Mods Directory
+               </TextBlock>
+                <TextBlock
+                    FontSize="11">
+                    (The Directory where FNF mods are installed)
+                </TextBlock>
+            </StackPanel>
+            <TextBox
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="15,5,0,0"
+                Width="400"
+                FontFamily="Cascadia Mono"
+                PlaceholderText="Enter mods directory path..."/>
+            <Button
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="15,5,0,0"
+                Content="Save"/>
+
+            <StackPanel
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="0,5,0,0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="20">
+                    Saves Directory
+               </TextBlock>
+                <TextBlock
+                    FontSize="11">
+                    (The Directory where save files are stored)
+                </TextBlock>
+            </StackPanel>
+            <TextBox
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="15,5,0,0"
+                Width="400"
+                FontFamily="Cascadia Mono"
+                PlaceholderText="Enter saves directory path..."/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="15,5,0,0"
+                Content="Save"/>
+
+        </Grid>
+    </Grid>
 </UserControl>

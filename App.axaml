@@ -18,12 +18,12 @@
                 Value="avares://FNF-Manager/Assets/PhantomMuff_Full_Letters_1_1_5.ttf#PhantomMuff 1.5" />
         </Style>
 
-        <Style Selector="TextBlock">
+        <!--<Style Selector="TextBlock">
             <Setter Property="Foreground" Value="White" />
         </Style>
         <Style Selector="Button">
             <Setter Property="Foreground" Value="White" />
-        </Style>
+        </Style>-->
 
         <Style Selector="Button.sidebar-button">
         <Style.Resources>
@@ -57,13 +57,15 @@
             <SolidColorBrush x:Key="TextColor" Color="White"/>
             <SolidColorBrush x:Key="WelcomeTextFore" Color="White"/>
             <SolidColorBrush x:Key="WelcomeTextBack" Color="#CC000000"/>
-            <SolidColorBrush x:Key="SidebarSeparator" Color="Black"/>
+            <SolidColorBrush x:Key="SidebarSeparator" Color="White"/>
             <SolidColorBrush x:Key="BackgroundColor" Color="#fdd461"/>
             <Color x:Key="LeftGraidentInner">#2823b4</Color>
             <Color x:Key="LeftGraidentOuter">#0e0e0e</Color>
             <SolidColorBrush x:Key="SidebarButtonBG" Color="#3f3a48"/>
             <SolidColorBrush x:Key="SidebarButtonBGHover" Color="Black"/>
             <SolidColorBrush x:Key="SidebarButtonBGPressed" Color="White"/>
+
+            <SolidColorBrush x:Key="SettingsBackgroundColor" Color="#ce64df"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
