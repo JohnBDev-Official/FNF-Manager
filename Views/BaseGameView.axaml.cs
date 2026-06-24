@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace FNF_Manager.Views;
 
-public partial class SettingsView : UserControl
+public partial class BaseGameView : UserControl
 {
-    public SettingsView()
+    public BaseGameView()
     {
         InitializeComponent();
     }

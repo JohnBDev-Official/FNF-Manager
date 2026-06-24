@@ -16,13 +16,13 @@
     </Design.DataContext>
 
     <Grid
-        Background="{DynamicResource BackgroundColor}">
+        Background="{DynamicResource BackgroundColor}"
+        ColumnDefinitions="180,*">
         <Border
           BorderBrush="{DynamicResource SidebarSeparator}"
+          Grid.Column="0"
           BorderThickness="0,0,2,0"
-          Padding="10"
-          Width="180"
-          HorizontalAlignment="Left">
+          Padding="10">
             <Grid>
             <StackPanel>
                 <TextBlock
@@ -41,7 +41,8 @@
                     Margin="0,0,0,5"
                     FontSize="20"
                     Classes="sidebar-button"
-                    Content="Base game" />
+                    Content="Base game"
+                    Command="{Binding ShowBaseGameCommand}"/>
                 <Button
                     Margin="0,0,0,5"
                     FontSize="20"
@@ -60,7 +61,8 @@
                     Margin="0,0,0,5"
                     FontSize="20"
                     Classes="sidebar-button"
-                    Content="Settings" />
+                    Content="Settings"
+                    Command="{Binding ShowSettingsCommand}"/>
             </StackPanel>
             </Grid>
             <Border.Background>
@@ -73,12 +75,15 @@
             </Border.Background>
         </Border>
 
-        <ContentControl Grid.Column="1"
-                    Content="{Binding CurrentPage}"/>
+        <ContentControl
+            Grid.Column="1"
+            Content="{Binding CurrentPage}"/>
 
-        <Border HorizontalAlignment="Center"
-            VerticalAlignment="Center"
+        <Border
             Background="{DynamicResource WelcomeTextBack}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Grid.ColumnSpan="2"
             CornerRadius="12"
             Padding="24,12"
             Opacity="1">

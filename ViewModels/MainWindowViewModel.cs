@@ -1,6 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Styling;
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace FNF_Manager.ViewModels
 {
@@ -10,14 +11,26 @@ namespace FNF_Manager.ViewModels
         private bool isDarkMode;
 
         [ObservableProperty]
-        private ViewModelBase currentPage = new SettingsViewModel();
+        public ViewModelBase currentPage = new BaseGameViewModel();
 
-        partial void OnIsDarkModeChanged(bool value)
+        [RelayCommand]
+        public void ShowBaseGameCommand()
         {
-            if (Application.Current is { } app)
-            {
-                app.RequestedThemeVariant = value ? ThemeVariant.Dark : ThemeVariant.Light;
-            }
+            CurrentPage = new BaseGameViewModel();
         }
+
+        [RelayCommand]
+        public void ShowSettingsCommand()
+        {
+            CurrentPage = new SettingsViewModel();
+        }
+
+        //partial void OnIsDarkModeChanged(bool value)
+        //{
+        //    if (Application.Current is { } app)
+        //    {
+        //        app.RequestedThemeVariant = value ? ThemeVariant.Dark : ThemeVariant.Light;
+        //    }
+        //}
     }
 }
