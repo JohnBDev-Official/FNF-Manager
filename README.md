@@ -30,3 +30,9 @@ As of writing this, the only developer is JohnB of JohnBDev
 JohnB <<johnb@johnbdev.net>>
 
 https://johnbdev.net/
+
+## License
+
+FNF Manager's source code is licensed under the Apache License 2.0.
+
+Friday Night Funkin' and related assets belong to their respective owners. FNF Manager is not affiliated with or endorsed by The Funkin' Crew Inc.
