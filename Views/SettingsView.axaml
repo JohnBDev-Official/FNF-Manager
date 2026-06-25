@@ -15,8 +15,8 @@
             Settings
         </TextBlock>
         <Grid
-            ColumnDefinitions="Auto,*,Auto"
-            RowDefinitions="Auto,Auto,Auto"
+            ColumnDefinitions="Auto,*"
+            RowDefinitions="Auto,Auto,Auto,Auto,Auto"
             Margin="30,75,30,0"
             HorizontalAlignment="Stretch"
             RowSpacing="10">
@@ -43,11 +43,6 @@
                 FontFamily="Consolas"
                 PlaceholderText="Enter base game directory path..."
                 Text="{Binding BaseGameDir}"/>
-            <Button
-                Grid.Row="0"
-                Grid.Column="2"
-                Margin="15,5,0,0"
-                Content="Save"/>
 
             <StackPanel
                 Grid.Row="1"
@@ -69,12 +64,8 @@
                 Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
                 FontFamily="Consolas"
+                Text="{Binding ModsDir}"
                 PlaceholderText="Enter mods directory path..."/>
-            <Button
-                Grid.Row="1"
-                Grid.Column="2"
-                Margin="15,0,0,0"
-                Content="Save"/>
 
             <StackPanel
                 Grid.Row="2"
@@ -96,13 +87,63 @@
                 Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
                 FontFamily="Consolas"
+                Text="{Binding SavesDir}"
                 PlaceholderText="Enter saves directory path..."/>
-            <Button
-                Grid.Row="2"
-                Grid.Column="2"
-                Margin="15,0,0,0"
-                Content="Save"/>
 
+            <StackPanel
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="0,0,0,0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="20">
+                    Covers Directory
+               </TextBlock>
+                <TextBlock
+                    FontSize="11">
+                    (The Directory where cover audio files are stored)
+                </TextBlock>
+            </StackPanel>
+            <TextBox
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="15,0,0,0"
+                HorizontalAlignment="Stretch"
+                FontFamily="Consolas"
+                Text="{Binding CoversDir}"
+                PlaceholderText="Enter covers directory path..."/>
+
+            <StackPanel
+                Grid.Row="4"
+                Grid.Column="0"
+                Margin="0,0,0,0"
+                VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="20">
+                    Check for Updates
+               </TextBlock>
+                <TextBlock
+                    FontSize="11">
+                    (Optionally check for new updates on startup)
+                </TextBlock>
+            </StackPanel>
+            <ToggleSwitch
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="15,0,0,0"
+                HorizontalAlignment="Left"
+                IsChecked="{Binding CheckForUpdatesOnStartup}"
+                OnContent="True"
+                OffContent="False"/>
         </Grid>
+        <Button
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Stretch"
+            Margin="150,0,150,60"
+            HorizontalContentAlignment="Center"
+            FontSize="28"
+            Command="{Binding SaveSettingsCommand}"
+            Background="{DynamicResource SettingsButtonColor}"
+            Content="Save"/>
     </Grid>
 </UserControl>

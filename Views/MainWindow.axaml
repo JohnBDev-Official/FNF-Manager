@@ -88,7 +88,8 @@
             Grid.ColumnSpan="2"
             CornerRadius="12"
             Padding="24,12"
-            Opacity="1">
+            Opacity="1"
+            IsHitTestVisible="False">
             <Border.Styles>
                 <Style Selector="Border">
                     <Style.Animations>

@@ -68,6 +68,7 @@
             <SolidColorBrush x:Key="BaseGameBackgroundColor" Color="#fdd461"/>
 
             <SolidColorBrush x:Key="SettingsBackgroundColor" Color="#ce64df"/>
+            <SolidColorBrush x:Key="SettingsButtonColor" Color="#a83ab8"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

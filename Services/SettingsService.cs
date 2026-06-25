@@ -2,6 +2,7 @@
 using FNF_Manager.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Text.Json;
@@ -24,7 +25,11 @@ namespace FNF_Manager.Services
         public async Task<Settings> LoadAsync()
         {
             if (!File.Exists(_settingsFilePath))
-                return new Settings();
+            {
+                Settings defaultSettings = new Settings();
+                await SaveAsync(defaultSettings);
+                return defaultSettings;
+            }
 
             try
             {
