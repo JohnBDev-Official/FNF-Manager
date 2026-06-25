@@ -26,7 +26,7 @@
         </Style>-->
 
         <Style Selector="Button.sidebar-button">
-        <Style.Resources>
+            <Style.Resources>
                 <SolidColorBrush x:Key="ButtonBackground" Color="#2823b4"/>
                 <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Black"/>
                 <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>

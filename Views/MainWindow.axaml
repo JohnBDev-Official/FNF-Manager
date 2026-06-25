@@ -3,11 +3,13 @@
         xmlns:vm="using:FNF_Manager.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1138" d:DesignHeight="626"
         x:Class="FNF_Manager.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="FNF Manager">
+        Title="FNF Manager"
+        Width="1138"
+        Height="626">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,

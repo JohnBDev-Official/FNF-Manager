@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="620" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="958" d:DesignHeight="626"
              x:Class="FNF_Manager.Views.SettingsView">
     <Grid
         Background="{DynamicResource SettingsBackgroundColor}">
@@ -15,13 +15,14 @@
         <Grid
             ColumnDefinitions="Auto,*,Auto"
             RowDefinitions="Auto,Auto,Auto"
-            Margin="30,60,30,0"
-            HorizontalAlignment="Stretch">
+            Margin="30,75,30,0"
+            HorizontalAlignment="Stretch"
+            RowSpacing="10">
 
             <StackPanel
                 Grid.Row="0"
                 Grid.Column="0"
-                Margin="0,5,0,0"
+                Margin="0,0,0,0"
                 VerticalAlignment="Center">
                 <TextBlock
                     FontSize="20">
@@ -35,9 +36,9 @@
             <TextBox
                 Grid.Row="0"
                 Grid.Column="1"
-                Margin="15,5,0,0"
+                Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Cascadia Mono"
+                FontFamily="Consolas"
                 PlaceholderText="Enter base game directory path..."/>
             <Button
                 Grid.Row="0"
@@ -48,7 +49,7 @@
             <StackPanel
                 Grid.Row="1"
                 Grid.Column="0"
-                Margin="0,5,0,0"
+                Margin="0,0,0,0"
                 VerticalAlignment="Center">
                 <TextBlock
                     FontSize="20">
@@ -62,20 +63,20 @@
             <TextBox
                 Grid.Row="1"
                 Grid.Column="1"
-                Margin="15,5,0,0"
+                Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Cascadia Mono"
+                FontFamily="Consolas"
                 PlaceholderText="Enter mods directory path..."/>
             <Button
                 Grid.Row="1"
                 Grid.Column="2"
-                Margin="15,5,0,0"
+                Margin="15,0,0,0"
                 Content="Save"/>
 
             <StackPanel
                 Grid.Row="2"
                 Grid.Column="0"
-                Margin="0,5,0,0"
+                Margin="0,0,0,0"
                 VerticalAlignment="Center">
                 <TextBlock
                     FontSize="20">
@@ -89,14 +90,14 @@
             <TextBox
                 Grid.Row="2"
                 Grid.Column="1"
-                Margin="15,5,0,0"
+                Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Cascadia Mono"
+                FontFamily="Consolas"
                 PlaceholderText="Enter saves directory path..."/>
             <Button
                 Grid.Row="2"
                 Grid.Column="2"
-                Margin="15,5,0,0"
+                Margin="15,0,0,0"
                 Content="Save"/>
 
         </Grid>

@@ -1,9 +1,11 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:FNF_Manager.ViewModels"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="620" d:DesignHeight="450"
-             x:Class="FNF_Manager.Views.BaseGameView">
+             mc:Ignorable="d" d:DesignWidth="958" d:DesignHeight="626"
+             x:Class="FNF_Manager.Views.BaseGameView"
+             x:DataType="vm:BaseGameViewModel">
     <Grid
         Background="{DynamicResource BaseGameBackgroundColor}">
         <Rectangle
@@ -14,18 +16,110 @@
             Height="40"/>
         <TextBlock
             Foreground="{DynamicResource TextColor}"
-            FontSize="24"
-            Margin="10,6,0,0"
-            FontFamily="avares://FNF-Manager/Assets/VCR_OSD_MONO_1.001.ttf#VCR OSD Mono">
+            FontSize="22"
+            Margin="10,8,0,0"
+            Classes="basegame-font">
             Base Game
         </TextBlock>
         <TextBlock
             Foreground="#7F7F7F"
-            FontSize="24"
-            Margin="10,6,10,0"
+            FontSize="22"
+            Margin="10,8,10,0"
             HorizontalAlignment="Right"
-            FontFamily="avares://FNF-Manager/Assets/VCR_OSD_MONO_1.001.ttf#VCR OSD Mono">
-            Version 0.8.4
+            Classes="basegame-font">
+            NOT INSTALLED
         </TextBlock>
+
+        <Rectangle
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Stretch"
+            Fill="Black"
+            Stretch="Fill"
+            Height="175"/>
+        <Button
+            Background="Transparent"
+            BorderBrush="Transparent"
+            VerticalAlignment="Bottom"
+            Margin="30,0,0,65"
+            Classes="basegame-font"
+            Foreground="#b73f69"
+            FontSize="28">
+            Install
+        </Button>
+        <TextBlock
+            VerticalAlignment="Bottom"
+            Margin="30,0,0,110"
+            Classes="basegame-font"
+            Foreground="#b73f69">
+            Latest Version: 0.8.4
+        </TextBlock>
+
+        <Button
+            Background="Transparent"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center"
+            FontSize="64"
+            Foreground="White"
+            FontFamily="avares://FNF-Manager/Assets/Phantomuff Difficult Font.ttf#Pah"
+            Margin="0,0,200,50">
+            LAUNCH
+        </Button>
+
+        <Button Classes="image-button"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="{Binding ArrowMargin}"
+                Command="{Binding changeDifficultyTextCommand}">
+            <Image Source="avares://FNF-Manager/Assets/Icons/arrowleft.png"
+                   Width="36"/>
+        </Button>
+        <TextBlock
+            Foreground="{Binding DifficultyTextColor}"
+            FontSize="36"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            Margin="0,0,66,110"
+            Classes="basegame-difficulty-font"
+            Text="{Binding DifficultyText}"/>
+        <Button Classes="image-button"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,20,98"
+                Command="{Binding changeDifficultyTextCommand}">
+            <Image Source="avares://FNF-Manager/Assets/Icons/arrowright.png"
+                   Width="36"/>
+        </Button>
     </Grid>
+    <UserControl.Styles>
+        <Style Selector="Button.basegame-font">
+            <Setter Property="FontFamily" Value="avares://FNF-Manager/Assets/VCR_OSD_MONO_1.001.ttf#VCR OSD Mono"/>
+        </Style>
+        <Style Selector="TextBlock.basegame-font">
+            <Setter Property="FontFamily" Value="avares://FNF-Manager/Assets/VCR_OSD_MONO_1.001.ttf#VCR OSD Mono"/>
+        </Style>
+
+        <Style Selector="TextBlock.basegame-difficulty-font">
+            <Setter Property="FontFamily" Value="avares://FNF-Manager/Assets/Phantomuff Difficult Font.ttf#Pah"/>
+        </Style>
+
+        <Style Selector="Button.image-button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        <Style Selector="Button.image-button:pointerover">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
+        <Style Selector="Button.image-button:pressed">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+        </Style>
+        <Style Selector="Button.image-button Image">
+            <Setter Property="Source" Value="avares://FNF-Manager/Assets/Icons/arrowleft.png"/>
+        </Style>
+        <Style Selector="Button.image-button:pressed Image">
+            <Setter Property="Source" Value="avares://FNF-Manager/Assets/Icons/arrowleftpressed.png"/>
+        </Style>
+    </UserControl.Styles>
 </UserControl>
