@@ -1,0 +1,38 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="958" d:DesignHeight="626"
+             x:Class="FNF_Manager.Views.AboutView">
+    <Grid
+        Background="{DynamicResource SettingsBackgroundColor}">
+        <TextBlock
+            Foreground="{DynamicResource TextColor}"
+            FontSize="28"
+            Margin="10">
+            About FNF Manager
+        </TextBlock>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="25,200,0,0"
+            HorizontalAlignment="Left">
+            <TextBlock>
+                &#160;&#160;&#160;&#160;FNF Manager was started by JohnB of JohnBDev. The idea was simple, a software to manage FNF. I originally<LineBreak/>
+                created FNF Manager because I used to work a seasonal job, and I wasn't about to bring my full desktop with<LineBreak/>
+                me, so I grabbed my laptop and for 8 weeks that's all I was stuck with. Sure I can go download FNF mods, but my<LineBreak/>
+                saves and covers don't come with me, at least without manually remotely transferring them to my laptop and<LineBreak/>
+                that was always very manual. Then FNF Manager could manage my saves and I tell it to use a cloud storage<LineBreak/>
+                folder that syncs across my devices.
+            </TextBlock>
+            <TextBlock
+                FontWeight="Bold"
+                Margin="0,25,0,5">License</TextBlock>
+            <TextBlock>
+                FNF Manager's source code is licensed under the Apache License 2.0.<LineBreak/><LineBreak/>
+                Friday Night Funkin' and related assets belong to their respective owners.<LineBreak/>
+                FNF Manager is not affiliated with or endorsed by The Funkin' Crew Inc.
+            </TextBlock>
+            <TextBlock></TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

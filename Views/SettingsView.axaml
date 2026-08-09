@@ -40,7 +40,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Consolas"
+                FontFamily="monospace"
                 PlaceholderText="Enter base game directory path..."
                 Text="{Binding BaseGameDir}"/>
 
@@ -63,7 +63,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Consolas"
+                FontFamily="monospace"
                 Text="{Binding ModsDir}"
                 PlaceholderText="Enter mods directory path..."/>
 
@@ -86,7 +86,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Consolas"
+                FontFamily="monospace"
                 Text="{Binding SavesDir}"
                 PlaceholderText="Enter saves directory path..."/>
 
@@ -109,7 +109,7 @@
                 Grid.Column="1"
                 Margin="15,0,0,0"
                 HorizontalAlignment="Stretch"
-                FontFamily="Consolas"
+                FontFamily="monospace"
                 Text="{Binding CoversDir}"
                 PlaceholderText="Enter covers directory path..."/>
 

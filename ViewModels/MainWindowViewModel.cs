@@ -16,15 +16,33 @@ namespace FNF_Manager.ViewModels
         [RelayCommand]
         public void ShowBaseGameCommand()
         {
-            CurrentPage = new BaseGameViewModel();
+            if (CurrentPage is not BaseGameViewModel)
+                CurrentPage = new BaseGameViewModel();
+        }
+
+        [RelayCommand]
+        public void ShowModsCommand()
+        {
+            if (CurrentPage is not ModsViewModel)
+                CurrentPage = new ModsViewModel();
         }
 
         [RelayCommand]
         public void ShowSettingsCommand()
         {
-            CurrentPage = new SettingsViewModel();
+            if (CurrentPage is not SettingsViewModel)
+                CurrentPage = new SettingsViewModel();
         }
-
+        
+        [RelayCommand]
+        public void ShowAboutCommand()
+        {
+            if (CurrentPage is not AboutViewModel)
+                CurrentPage = new AboutViewModel();
+        }
+        
+        // Changing between the dark and light mode was abandoned very early, I wanted to build a UI that reminds you of FNF. -JohnB
+        //
         //partial void OnIsDarkModeChanged(bool value)
         //{
         //    if (Application.Current is { } app)
